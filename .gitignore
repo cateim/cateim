@@ -1,0 +1,18 @@
+# cateim profile README - files that never enter the repository
+
+# ---- Controle de trabalho ----
+# Rascunho de trabalho, nao documentacao: muda a cada sessao e cita o que
+# ainda esta pendente.
+CHECKLIST.md
+
+# ---- OS and editors ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# ---- Loose attachments in the root ----
+# Real documents arrive by e-mail and land in the root by mistake.
+/*.pdf
+/*.xlsx
