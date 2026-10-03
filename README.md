@@ -122,12 +122,6 @@ looks like a green build.
   ESP32-S3 that is GPIO43 and GPIO44, exactly the board's SPI MOSI and MISO.
   Fixed upstream by releasing the console instead of the pins
   ([arendst/Tasmota#25047](https://github.com/arendst/Tasmota/pull/25047)).
-- **A public log listing every private repository.** The weekly job that counts
-  commits for selflabs.org printed each repository name with its commit count,
-  and an Actions log of a public repository is readable by anyone. Measured on
-  one run: fourteen private names. Private repositories are now summed, never
-  named. Documented in
-  [`scripts/fetch-stats.mjs`](https://github.com/self-labs/self-labs/blob/master/scripts/fetch-stats.mjs).
 - **The dev server died on every Vite re optimisation.** `EPERM ... rmdir
 node_modules\.vite\deps`, then a libuv assertion. Cause: 345 of 345 directories
   in the checkout carried the Windows ReadOnly attribute, and Node's `rmdir`
